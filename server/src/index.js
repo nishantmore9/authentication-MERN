@@ -9,7 +9,7 @@ app.use(express.json())
 dotenv.config({
   path : ".env"
 });
-
+// DB connection
 mongoose
   .connect(process.env.MONGODB_URI)
   .then(() => console.log(`MongoDB connected`))
